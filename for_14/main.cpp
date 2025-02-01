@@ -5,10 +5,11 @@ int main()
     int n;
     std::cout<<"введите значение числа n: ";
     std::cin>>n;
-    double summ = 0;
-    for(double i = 1; i < n;i++){
-        summ = 2 * ( n - 1);
+    int summ = 0;
+    for(int i = 1; i < n + 1; ++i){
+        summ += i + (i - 1);
+        std::cout<< summ<<" ";
     }
-std::cout<<summ<<'\n';
+std::cout<<"квадрат числа "<<n<<" равен: " << summ<<'\n';
     return 0;
 }
